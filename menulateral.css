@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,400;1,300&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body{
+    background: url(portfolio\ 3.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0; left: 0;
+
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:40px;
+    margin-top: 20px;
+}
+.container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*Fin de Menù lateral*/
+h2{
+    text-align: center;
+        color: rgb(0, 0, 0);
+    padding-top: 200px;
+    padding-bottom: 430px;
+
+}
+#sobremi p{
+    text-align: center;
+    padding-left: 10px;
+}
+
+#sobremi{
+    padding-top: 120px;
+    padding-bottom: 205px;
+    background-color: black;
+    color: white;
+    
+}
+#estudios p{
+    text-align: center;
+    padding-left: 10px;
+    
+}
+#estudios{
+    background-color: black;
+    color: white;
+    padding-top: 250px;
+}
+#contacto a{
+    display: block;
+}
+#contacto{
+    background-color: black;
+    color: white;
+    padding-top: 300px
+}
+#contacto p{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#estudios a{
+    text-decoration: none;
+}
+/* Estilo para el botón de volver */
+.btn-volver {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Cambiar color del botón al pasar el cursor sobre él */
+.btn-volver:hover {
+  background-color: #000000;
+  color: white;
+}
+
